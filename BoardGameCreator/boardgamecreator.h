@@ -42,17 +42,8 @@ private:
 
 	//saving game
 	void SaveToFile(string filename);
-	void Zip(string key);
-	void AddKey(string key);
-	void Encode(string filename, string key);
-
-	void CodeFromToFile(string from, string to, string key, bool deleteFrom);
-
 	//open game
 	void LoadFromFile(string filename);
-	void Decode(string filename, string key);
-	string GetKey();
-	void Unzip(string key);
 
 private slots:
 	void NewGame();

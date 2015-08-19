@@ -69,6 +69,8 @@ public:
     QVBoxLayout *verticalLayout_3;
     QLabel *label_6;
     QPlainTextEdit *gamedescription;
+    QWidget *tab_10;
+    QWidget *tab_11;
     QWidget *tab_2;
     QGroupBox *editMode;
     QGroupBox *groupBox;
@@ -104,7 +106,7 @@ public:
     {
         if (BoardGameCreatorClass->objectName().isEmpty())
             BoardGameCreatorClass->setObjectName(QStringLiteral("BoardGameCreatorClass"));
-        BoardGameCreatorClass->resize(933, 596);
+        BoardGameCreatorClass->resize(1217, 596);
         newGame = new QAction(BoardGameCreatorClass);
         newGame->setObjectName(QStringLiteral("newGame"));
         openGame = new QAction(BoardGameCreatorClass);
@@ -119,7 +121,7 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         gameParams = new QTabWidget(centralWidget);
         gameParams->setObjectName(QStringLiteral("gameParams"));
-        gameParams->setGeometry(QRect(20, 20, 901, 481));
+        gameParams->setGeometry(QRect(20, 20, 1011, 481));
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
         layoutWidget = new QWidget(tab);
@@ -241,6 +243,12 @@ public:
         layoutWidget->raise();
         layoutWidget_2->raise();
         layoutWidget_3->raise();
+        tab_10 = new QWidget();
+        tab_10->setObjectName(QStringLiteral("tab_10"));
+        gameParams->addTab(tab_10, QString());
+        tab_11 = new QWidget();
+        tab_11->setObjectName(QStringLiteral("tab_11"));
+        gameParams->addTab(tab_11, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
         editMode = new QGroupBox(tab_2);
@@ -350,7 +358,7 @@ public:
         BoardGameCreatorClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(BoardGameCreatorClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 933, 21));
+        menuBar->setGeometry(QRect(0, 0, 1217, 21));
         menu = new QMenu(menuBar);
         menu->setObjectName(QStringLiteral("menu"));
         BoardGameCreatorClass->setMenuBar(menuBar);
@@ -370,7 +378,7 @@ public:
 
         retranslateUi(BoardGameCreatorClass);
 
-        gameParams->setCurrentIndex(0);
+        gameParams->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(BoardGameCreatorClass);
@@ -392,6 +400,8 @@ public:
         label_5->setText(QApplication::translate("BoardGameCreatorClass", "\320\235\320\260\320\267\320\262\320\260\320\275\320\270\320\265 \320\270\320\263\321\200\321\213:", 0));
         label_6->setText(QApplication::translate("BoardGameCreatorClass", "\320\232\321\200\320\260\321\202\320\272\320\276\320\265 \320\276\320\277\320\270\321\201\320\260\320\275\320\270\320\265 \320\270\320\263\321\200\321\213", 0));
         gameParams->setTabText(gameParams->indexOf(tab), QApplication::translate("BoardGameCreatorClass", "\320\236\321\201\320\275\320\276\320\262\320\275\321\213\320\265 \320\264\320\260\320\275\320\275\321\213\320\265 \320\270\320\263\321\200\321\213", 0));
+        gameParams->setTabText(gameParams->indexOf(tab_10), QApplication::translate("BoardGameCreatorClass", "\320\232\320\276\320\273\320\276\320\264\321\213", 0));
+        gameParams->setTabText(gameParams->indexOf(tab_11), QApplication::translate("BoardGameCreatorClass", "\320\243\321\201\320\273\320\276\320\262\320\270\321\217", 0));
         editMode->setTitle(QString());
         groupBox->setTitle(QString());
         cardView->setText(QApplication::translate("BoardGameCreatorClass", "\320\240\320\270\321\201\321\203\320\275\320\276\320\272 \320\272\320\260\321\200\321\202\321\213", 0));

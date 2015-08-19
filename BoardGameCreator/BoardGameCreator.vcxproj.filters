@@ -33,6 +33,9 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{705c7a7b-0498-4281-8562-ee78a5685a8b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -60,6 +63,9 @@
     </CustomBuild>
     <CustomBuild Include="boardgamecreator.qrc">
       <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FileUtils.h">
+      <Filter>Source Files\Utils</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
